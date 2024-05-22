@@ -5,8 +5,8 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "start": "node src/app.js",
-    "vercel-build":"echo hello",
+    "start": "NODE_OPTIONS='--experimental-specifier-resolution=node' node src/app.js",
+    "vercel-build": "echo hello",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
