@@ -14,7 +14,7 @@ const App = () => {
     axios
       .get("http://localhost:5000/api/models")
       .then((response) => setModels(response.data))
-      .catch((error) => console.error(error));
+      .catch((error) => console.error(error.message));
   }, []);
 
   const length = models.length;
