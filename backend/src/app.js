@@ -25,8 +25,8 @@ app.use("/uploads", express.static("uploads"));
 
 // Routes
 app.use("/api/models", model);
-app.get("/", (res) => {
-  res.send(console.log("hello world"));
+app.get("/", (req, res) => {
+  res.send("hello world");
 });
 
 app.listen(PORT, () => {
